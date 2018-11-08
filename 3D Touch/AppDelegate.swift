@@ -12,10 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var vcsArray = [UIViewController]()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let settingVC = storyboard.instantiateViewController(withIdentifier: "SettingVC") as! SettingVC
+        let mapVC = storyboard.instantiateViewController(withIdentifier: "MapVC") as! MapVC
+        let chatVC = storyboard.instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
+        vcsArray = [settingVC, mapVC, chatVC]
         return true
     }
 
@@ -40,7 +48,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    enum shortcutType: String {
+        case setting = "Setting"
+        case map = "Map"
+        case chat = "Chat"
+    }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        let navVC = window?.rootViewController as! UINavigationController
+        navVC.setViewControllers(vcsArray, animated: false)
+        
+        if let type = shortcutItem.type.components(separatedBy: ".").last {
+            
+            switch type {
+            case shortcutType.map.rawValue:
+                navVC.popToViewController(vcsArray[1], animated: true)
+                completionHandler(true)
+                
+            case shortcutType.chat.rawValue:
+                navVC.popToViewController(vcsArray[2], animated: true)
+                completionHandler(true)
+                
+            default:
+                navVC.popViewController(animated: true)
+                completionHandler(true)
+            }
+        }
+        completionHandler(false)
+    }
 }
 

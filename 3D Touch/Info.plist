@@ -41,5 +41,32 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Setting</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Setting</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>settingicon</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Map</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Map</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>mapicon</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Chat</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Chat</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>chaticon</string>
+		</dict>
+	</array>
 </dict>
 </plist>

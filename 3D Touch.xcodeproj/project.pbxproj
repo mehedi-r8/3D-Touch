@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E005D61C2194A0EA0030E453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005D61B2194A0EA0030E453 /* AppDelegate.swift */; };
-		E005D61E2194A0EA0030E453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005D61D2194A0EA0030E453 /* ViewController.swift */; };
+		E005D61E2194A0EA0030E453 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005D61D2194A0EA0030E453 /* SettingVC.swift */; };
 		E005D6212194A0EA0030E453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E005D61F2194A0EA0030E453 /* Main.storyboard */; };
 		E005D6232194A0EC0030E453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E005D6222194A0EC0030E453 /* Assets.xcassets */; };
 		E005D6262194A0EC0030E453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E005D6242194A0EC0030E453 /* LaunchScreen.storyboard */; };
+		E005D62E2194A8F80030E453 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005D62D2194A8F80030E453 /* MapVC.swift */; };
+		E005D6302194A90D0030E453 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005D62F2194A90D0030E453 /* ChatVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E005D6182194A0EA0030E453 /* 3D Touch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3D Touch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E005D61B2194A0EA0030E453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E005D61D2194A0EA0030E453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E005D61D2194A0EA0030E453 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		E005D6202194A0EA0030E453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E005D6222194A0EC0030E453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E005D6252194A0EC0030E453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E005D6272194A0EC0030E453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E005D62D2194A8F80030E453 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		E005D62F2194A90D0030E453 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 		E005D61A2194A0EA0030E453 /* 3D Touch */ = {
 			isa = PBXGroup;
 			children = (
-				E005D61B2194A0EA0030E453 /* AppDelegate.swift */,
-				E005D61D2194A0EA0030E453 /* ViewController.swift */,
+				E005D61D2194A0EA0030E453 /* SettingVC.swift */,
+				E005D62D2194A8F80030E453 /* MapVC.swift */,
+				E005D62F2194A90D0030E453 /* ChatVC.swift */,
 				E005D61F2194A0EA0030E453 /* Main.storyboard */,
+				E005D61B2194A0EA0030E453 /* AppDelegate.swift */,
 				E005D6222194A0EC0030E453 /* Assets.xcassets */,
 				E005D6242194A0EC0030E453 /* LaunchScreen.storyboard */,
 				E005D6272194A0EC0030E453 /* Info.plist */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E005D61E2194A0EA0030E453 /* ViewController.swift in Sources */,
+				E005D6302194A90D0030E453 /* ChatVC.swift in Sources */,
+				E005D61E2194A0EA0030E453 /* SettingVC.swift in Sources */,
+				E005D62E2194A8F80030E453 /* MapVC.swift in Sources */,
 				E005D61C2194A0EA0030E453 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SettingVC.swift
 //  3D Touch
 //
 //  Created by MEHEDI.R8 on 11/8/18.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-

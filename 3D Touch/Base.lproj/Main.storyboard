@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XCo-a7-l3K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Setting-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingVC" id="BYZ-38-t0r" customClass="SettingVC" customModule="_D_Touch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Setting" translatesAutoresizingMaskIntoConstraints="NO" id="rr6-1m-glK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rr6-1m-glK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2AX-QA-0wW"/>
+                            <constraint firstItem="rr6-1m-glK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="exq-Xv-xSA"/>
+                            <constraint firstItem="rr6-1m-glK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gyu-H7-5gl"/>
+                            <constraint firstItem="rr6-1m-glK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hy2-XT-RJZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Setting" id="0IU-rW-HPg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="rb6-P4-fsJ">
+                            <connections>
+                                <segue destination="WVL-13-S2Y" kind="show" id="80v-hw-uCU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="iax-Sc-9Ss">
+            <objects>
+                <viewController storyboardIdentifier="MapVC" id="WVL-13-S2Y" customClass="MapVC" customModule="_D_Touch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wMA-z4-bor">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="0qs-ZN-eCd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0qs-ZN-eCd" firstAttribute="trailing" secondItem="Ixy-Tf-gaB" secondAttribute="trailing" id="11z-V4-8Iu"/>
+                            <constraint firstItem="0qs-ZN-eCd" firstAttribute="top" secondItem="Ixy-Tf-gaB" secondAttribute="top" id="43a-sf-mTm"/>
+                            <constraint firstItem="0qs-ZN-eCd" firstAttribute="leading" secondItem="Ixy-Tf-gaB" secondAttribute="leading" id="Dsi-Yn-ApV"/>
+                            <constraint firstItem="0qs-ZN-eCd" firstAttribute="bottom" secondItem="Ixy-Tf-gaB" secondAttribute="bottom" id="JnT-hs-Hci"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ixy-Tf-gaB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="aV3-Wc-1vX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="rrC-k3-FC6">
+                            <connections>
+                                <segue destination="vrz-wC-5eY" kind="show" id="uiT-u3-MQL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZo-5L-Ysb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="134"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="euK-2w-mKu">
+            <objects>
+                <viewController storyboardIdentifier="ChatVC" id="vrz-wC-5eY" customClass="ChatVC" customModule="_D_Touch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aiL-yN-I05">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-9U-ToZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rmm-9U-ToZ" firstAttribute="leading" secondItem="1rN-5e-008" secondAttribute="leading" id="Rny-eg-Y0G"/>
+                            <constraint firstItem="Rmm-9U-ToZ" firstAttribute="trailing" secondItem="1rN-5e-008" secondAttribute="trailing" id="hgg-MO-J2f"/>
+                            <constraint firstItem="Rmm-9U-ToZ" firstAttribute="top" secondItem="1rN-5e-008" secondAttribute="top" id="lOH-SC-gDd"/>
+                            <constraint firstItem="Rmm-9U-ToZ" firstAttribute="bottom" secondItem="1rN-5e-008" secondAttribute="bottom" id="qbV-Ms-x42"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1rN-5e-008"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat" id="3Z6-Qi-kmb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FxK-TV-zON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2247" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3nJ-Qg-9Kb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XCo-a7-l3K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fg7-o3-CXh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pjq-nS-n2k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXa-rF-Y6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Setting" width="1242" height="2208"/>
+        <image name="chat" width="1242" height="2208"/>
+        <image name="map" width="325" height="577"/>
+    </resources>
 </document>
